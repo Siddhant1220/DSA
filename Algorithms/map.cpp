@@ -14,9 +14,9 @@ struct Student {
 int main() {
     unordered_map<int, Student> hashMap;
 
-    hashMap[1] = Student("John Doe", 1001, 101);
-    hashMap[2] = Student("Jane Smith", 1002, 102);
-    hashMap[3] = Student("Alice Johnson", 1003, 103);
+    hashMap[1] = Student("Siddhant Dubey", 1001, 101);
+    hashMap[2] = Student("Shivraj", 1002, 102);
+    hashMap[3] = Student("Shreyansh", 1003, 103);
 
     for (const auto& pair : hashMap) {
         cout << "Key: " << pair.first << endl;

@@ -32,17 +32,15 @@ public:
     void deleteNode(Node* del) {
         if (!head || !del) return;
 
-        // If node to be deleted is head node
+        
         if (head == del) {
             head = del->next;
         }
 
-        // Change next only if node to be deleted is NOT the last node
         if (del->next != nullptr) {
             del->next->prev = del->prev;
         }
 
-        // Change prev only if node to be deleted is NOT the first node
         if (del->prev != nullptr) {
             del->prev->next = del->next;
         }
@@ -71,7 +69,6 @@ int main() {
     cout << "Original list: ";
     list.printList();
 
-    // Delete node with value 3
     Node* nodeToDelete = list.head->next->next;
     list.deleteNode(nodeToDelete);
 
